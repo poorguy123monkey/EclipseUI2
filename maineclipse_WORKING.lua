@@ -1,12 +1,3 @@
-
-return function()
-    local Players = game:GetService("Players")
-    local Player = Players.LocalPlayer
-    local gui = Instance.new("ScreenGui")
-    gui.Name = "EclipseUI"
-    gui.ResetOnSpawn = false
-    gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
 --[[
     RADIANT Hub UI
     - Modern, glassmorphic, animated, sidebar navigation
@@ -725,5 +716,4 @@ end)
 setupAimbotTab()
 -- updateTabUnderline() -- REMOVED
 
-    gui.Parent = Player:WaitForChild("PlayerGui")
-end
+return {ScreenGui = gui}
